@@ -7,8 +7,8 @@ from prefect import flow,task
 @flow
 def create_mail_block():
     credentials = EmailServerCredentials(
-        username="adalihaskeservices@gmail.com",
-        password="gbwrgicfveoxmtbx")
+        username="testmail@gmail.com",
+        password="234535")
     credentials.save(name="email-auth-block", overwrite=True)
 
 @flow
