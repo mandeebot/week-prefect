@@ -32,6 +32,7 @@ def read_data(file):
 
 
 @task
+#feature engineering and encoding features of interest
 def add_features(df_train: pd.DataFrame, df_val: pd.DataFrame) -> tuple(
     [
         scipy.sparse._csr.csr_matrix,
